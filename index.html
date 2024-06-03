@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/all.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">  
+  <title>Document</title>
+</head>
+    <body class="d-flex m-0 p-0 justify-content-center align-items-center">
+      <div class="main">  	
+        <input type="checkbox" id="chk" >
+    
+          <div class="position-relative h-100 w-100 ">
+            <form>
+              <label for="chk" >Sign up</label>
+              <input class="form-control w-75 mx-auto mb-2" id="username" type="text" name="txt" placeholder="User name" >
+              <input class="form-control w-75 mx-auto mb-2" id="Email" type="email" name="email" placeholder="Email" required="" >
+              <input class="form-control w-75 mx-auto mb-2" id="password" type="password" name="pswd" placeholder="Password" >
+              <span class="form-text d-flex justify-content-center align-items-center text-danger m-0" style="visibility: hidden;" id="inValidData" >All inputs is required</span>
+              <button class="d-flex justify-content-center align-items-center mx-auto w-75 fw-bold mt-4 border-0" onclick="SaveDB()">Sign up</button>
+            </form>
+          </div>
+    
+          <div class="login">
+            <form>
+              <label for="chk" >Login</label>
+              <input class="form-control w-75 mx-auto mb-2" id="EmailLogin" type="email" name="email" placeholder="Email" required="">
+              <input class="form-control w-75 mx-auto mb-2" id="PasswordLogin" type="password" name="pswd" placeholder="Password" required="">
+              <span class="form-text d-flex justify-content-center align-items-center text-danger m-0" style="visibility: hidden;" id="LoginData" >All inputs is required</span>
+              <button class="d-flex justify-content-center align-items-center mx-auto w-75 fw-bold mt-4 border-0" type="button" onclick="LoginDB()">Login</button>
+            </form>
+          </div>
+      </div>
+    
+      
+
+        
+        <script src="js/main.js"></script>
+    
+    </body>
+</body>
+</html>
